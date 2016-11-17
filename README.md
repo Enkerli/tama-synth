@@ -89,7 +89,7 @@ The `dur:` parameter controls the duration of the sound. Because resonance is co
 ## The “Pluck” Synth
 On the [sonic-pi Google Group](https://groups.google.com/d/msg/sonic-pi/yuE92JC4viA/K42TwnDACQAJ), user Eli asked about “easy, convincing guitar sounds”. As Richard Dobson then explained, the Karplus-Strong model is the classic way to emulate plucked-string sounds. As Xavier Riley further explained, SuperCollider comes with the [Pluck](http://doc.sccode.org/Classes/Pluck.html) UGen, an implementation of that very same Karplus-Strong model. Basically, a noise is sent as an “excitation” of a string model which then resonates with decreasing amplitude.
 
-This “pluck” synth is a quick and easy implementation of that Pluck UGen. Apart from some of the most basic arguments (`note:`, `amp:`, `pan:`, and `dur:`), this synth accepts `coef`, a coefficient which makes the string sound more or less muted. The usable range for this parameter is from -0.9 to about 0.9 or so.
+This “pluck” synth is a quick and easy implementation of that Pluck UGen. Apart from some of the most basic arguments (`note:`, `amp:`, `pan:`, and `dur:`), this synth accepts `coef:`, a coefficient which makes the string sound more or less muted. The usable range for this parameter is from -0.9 to about 0.9 or so.
 
 
 
